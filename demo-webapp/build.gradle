@@ -8,7 +8,7 @@ plugins {
 group = 'com.dhar'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
-mainClassName = 'com.dhar.demowebapp.DemoWebappApplication'
+mainClassName = 'com.dhar.demowebapp.Application'
 
 configurations {
 	compileOnly {
