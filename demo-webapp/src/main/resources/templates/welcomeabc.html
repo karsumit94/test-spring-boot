@@ -1,4 +1,6 @@
 <!DOCTYPE HTML>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
@@ -9,7 +11,12 @@
 </head>
 <body>
 
-	<h1>Hello World abc!</h1>
+	<h1>Hello World !</h1>
+	<form:form method="post" modelAttribute="userForm" action="${userActionUrl}">
+  		<form:input path="name" type="text" /> <!-- bind to user.name-->
+		<form:errors path="name" />
+  		<form:input type="submit" value="Submit" />
+	</form:form>
 
 </body>
 
